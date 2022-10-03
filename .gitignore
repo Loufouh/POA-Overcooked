@@ -1,0 +1,7 @@
+## CLion build folders
+cmake-build-debug/
+cmake-build-release/
+
+## Command-line build folder
+build/
+
