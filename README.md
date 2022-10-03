@@ -2,7 +2,7 @@
 Development of an agent who cooks steaks and fries.
 
 ## Initialisation
-Cmake (to run after modifying a `CMakeLists.txt` file):
+CMake
 ```bash
 cmake -S . -B build
 ```
