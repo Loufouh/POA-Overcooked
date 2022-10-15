@@ -5,15 +5,15 @@ namespace environment {
     Machine::Machine(): state{free} {}
 
     bool Machine::isFree() {
-        return state == free;
+        return state == MachineState::free;
     }
 
     bool Machine::isCooking() {
-        return state == cooking;
+        return state == MachineState::cooking;
     }
 
     bool Machine::isReady() {
-        return state == ready;
+        return state == MachineState::ready;
     }
 
     bool Machine::hasProblem() {
