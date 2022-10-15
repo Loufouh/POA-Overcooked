@@ -15,6 +15,8 @@ namespace environment {
         MachineState state;
 
         Machine();
+
+        bool isFree();
     };
 
 } // environment
