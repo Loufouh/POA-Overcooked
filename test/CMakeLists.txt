@@ -8,6 +8,5 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 include(GoogleTest)
 
-add_subdirectory(example)
 add_subdirectory(environment)
 
