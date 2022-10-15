@@ -5,3 +5,6 @@ cmake-build-release/
 ## Command-line build folder
 build/
 
+## CLion folder
+.idea/
+
