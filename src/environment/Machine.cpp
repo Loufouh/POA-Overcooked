@@ -7,4 +7,8 @@ namespace environment {
     bool Machine::isFree() {
         return state == free;
     }
+
+    bool Machine::isCooking() {
+        return state == cooking;
+    }
 } // environment
