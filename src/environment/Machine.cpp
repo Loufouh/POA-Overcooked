@@ -15,4 +15,8 @@ namespace environment {
     bool Machine::isReady() {
         return state == ready;
     }
+
+    bool Machine::hasProblem() {
+        return state == MachineState::hasProblem;
+    }
 } // environment
