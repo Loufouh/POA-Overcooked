@@ -3,7 +3,7 @@
 
 using namespace environment;
 
-TEST(Test_hasRemainingOrders, hasNoOrders) {
+TEST(OrerList_hasRemainingOrders, hasNoOrdersState) {
     OrderList orderList;
 
     orderList.state = hasNoOrders;
@@ -11,7 +11,7 @@ TEST(Test_hasRemainingOrders, hasNoOrders) {
     EXPECT_FALSE(orderList.hasRemainingOrders());
 }
 
-TEST(Test_hasRemainingOrders, hasOrders) {
+TEST(OrderList_hasRemainingOrders, hasOrdersState) {
     OrderList orderList;
 
     orderList.state = hasOrders;

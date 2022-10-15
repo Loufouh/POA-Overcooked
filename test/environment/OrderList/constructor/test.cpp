@@ -3,7 +3,7 @@
 
 using namespace environment;
 
-TEST(Test_constructor, state) {
+TEST(OrderList_constructor, state) {
     OrderList orderList;
 
     EXPECT_EQ(
