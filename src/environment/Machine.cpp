@@ -11,4 +11,8 @@ namespace environment {
     bool Machine::isCooking() {
         return state == cooking;
     }
+
+    bool Machine::isReady() {
+        return state == ready;
+    }
 } // environment

@@ -18,6 +18,7 @@ namespace environment {
 
         bool isFree();
         bool isCooking();
+        bool isReady();
     };
 
 } // environment
