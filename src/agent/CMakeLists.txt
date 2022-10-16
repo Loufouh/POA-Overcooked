@@ -1,6 +1,7 @@
 add_library(
         agent
         rules/Condition/Condition.cpp rules/Condition/Condition.h
+        rules/Action/Action.cpp rules/Action/Action.h
 )
 target_include_directories(
         agent PUBLIC
