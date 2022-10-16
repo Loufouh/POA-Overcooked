@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "environment/objects/Table/Table.h"
 
-using namespace environment;
+using namespace environment::objects;
 
 TEST(Table_hasPlate, hasNoPlateState) {
     Table table;

@@ -2,9 +2,9 @@
 #include "environment/objects/Table/Table.h"
 
 TEST(Table_namespace, Table) {
-    environment::Table table;
+    environment::objects::Table table;
 }
 
 TEST(Table_namespace, TableState) {
-    environment::TableState state;
+    environment::objects::TableState state;
 }

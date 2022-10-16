@@ -3,20 +3,21 @@
 #define POA_OVERCOOKED_TABLE_H
 
 namespace environment {
-    enum class TableState {
-        hasPlate,
-        hasNoPlate
-    };
+    namespace objects {
+        enum class TableState {
+            hasPlate,
+            hasNoPlate
+        };
 
-    class Table {
-    public:
-        TableState state;
+        class Table {
+        public:
+            TableState state;
 
-        Table();
+            Table();
 
-        bool hasPlate();
-    };
-
+            bool hasPlate();
+        };
+    }
 } // environment
 
 #endif //POA_OVERCOOKED_TABLE_H
