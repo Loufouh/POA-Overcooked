@@ -5,7 +5,7 @@
 namespace environment {
     enum PlateState {
         empty,
-        steackOnly,
+        steakOnly,
         friesOnly,
         ready
     };

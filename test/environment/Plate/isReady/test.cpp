@@ -11,10 +11,10 @@ TEST(Plate_isReady, emptyState) {
     EXPECT_FALSE(plate.isReady());
 }
 
-TEST(Plate_isReady, steackOnlyState) {
+TEST(Plate_isReady, steakOnlyState) {
     Plate plate;
 
-    plate.state = PlateState::steackOnly;
+    plate.state = PlateState::steakOnly;
 
     EXPECT_FALSE(plate.isReady());
 }
