@@ -5,3 +5,5 @@ add_subdirectory(Table)
 add_subdirectory(Plate)
 
 add_subdirectory(Environment)
+
+add_subdirectory(Controller)
