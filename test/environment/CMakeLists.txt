@@ -1,9 +1,3 @@
-add_subdirectory(OrderList)
-add_subdirectory(Machine)
-add_subdirectory(Box)
-add_subdirectory(Table)
-add_subdirectory(Plate)
-
+add_subdirectory(objects)
 add_subdirectory(Environment)
-
 add_subdirectory(Controller)
