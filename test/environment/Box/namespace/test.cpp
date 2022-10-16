@@ -2,9 +2,9 @@
 #include "environment/objects/Box/Box.h"
 
 TEST(Box_namespace, Box) {
-    environment::Box box;
+    environment::objects::Box box;
 }
 
 TEST(Box_namespace, BoxState) {
-    environment::BoxState state;
+    environment::objects::BoxState state;
 }

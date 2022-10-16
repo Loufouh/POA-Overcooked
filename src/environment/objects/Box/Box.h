@@ -3,20 +3,21 @@
 #define POA_OVERCOOKED_BOX_H
 
 namespace environment {
-    enum class BoxState {
-        empty,
-        notEmpty
-    };
+    namespace objects {
+        enum class BoxState {
+            empty,
+            notEmpty
+        };
 
-    class Box {
-    public:
-        BoxState state;
+        class Box {
+        public:
+            BoxState state;
 
-        Box();
+            Box();
 
-        bool isEmpty();
-    };
-
+            bool isEmpty();
+        };
+    }
 } // environment
 
 #endif //POA_OVERCOOKED_BOX_H

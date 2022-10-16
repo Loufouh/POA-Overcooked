@@ -7,6 +7,7 @@
 #include "environment/objects/Plate/Plate.h"
 
 using namespace environment;
+using namespace objects;
 
 TEST(Environment_default, orderList) {
     Environment &environment = *Environment::getInstance_ptr();

@@ -9,6 +9,7 @@
 #include "objects/Plate/Plate.h"
 
 namespace environment {
+    using namespace objects;
 
     class Environment {
     private:

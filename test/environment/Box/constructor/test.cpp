@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "environment/objects/Box/Box.h"
 
-using namespace environment;
+using namespace environment::objects;
 
 TEST(Box_constructor, state) {
     Box box;
