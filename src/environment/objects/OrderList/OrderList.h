@@ -3,20 +3,21 @@
 #define POA_OVERCOOKED_ORDERLIST_H
 
 namespace environment {
-    enum class OrderListState {
-        hasOrders,
-        hasNoOrders
-    };
+    namespace objects {
+        enum class OrderListState {
+            hasOrders,
+            hasNoOrders
+        };
 
-    class OrderList {
-    public:
-        OrderListState state;
+        class OrderList {
+        public:
+            OrderListState state;
 
-        OrderList();
+            OrderList();
 
-        bool hasRemainingOrders();
-    };
-
+            bool hasRemainingOrders();
+        };
+    }
 } // environment
 
 #endif //POA_OVERCOOKED_ORDERLIST_H

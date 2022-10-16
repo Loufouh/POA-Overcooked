@@ -2,9 +2,9 @@
 #include "environment/objects/OrderList/OrderList.h"
 
 TEST(OrderList_namespace, OrderList) {
-    environment::OrderList orderList;
+    environment::objects::OrderList orderList;
 }
 
 TEST(OrderList_namespace, OrderListState) {
-    environment::OrderListState state;
+    environment::objects::OrderListState state;
 }

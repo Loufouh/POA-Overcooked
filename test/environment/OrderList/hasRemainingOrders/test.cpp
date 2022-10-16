@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "environment/objects/OrderList/OrderList.h"
 
-using namespace environment;
+using namespace environment::objects;
 
 TEST(OrerList_hasRemainingOrders, hasNoOrdersState) {
     OrderList orderList;
