@@ -7,4 +7,8 @@ namespace environment {
     bool Plate::isEmpty() {
         return state == PlateState::empty;
     }
+
+    bool Plate::isReady() {
+        return state == PlateState::ready;
+    }
 } // environment

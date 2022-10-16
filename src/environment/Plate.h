@@ -17,6 +17,7 @@ namespace environment {
         Plate();
 
         bool isEmpty();
+        bool isReady();
     };
 
 } // environment
