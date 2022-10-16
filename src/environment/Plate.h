@@ -18,6 +18,7 @@ namespace environment {
 
         bool isEmpty();
         bool isReady();
+        bool containsSteak();
     };
 
 } // environment
