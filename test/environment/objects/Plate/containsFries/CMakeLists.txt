@@ -10,7 +10,7 @@ target_link_libraries(
 target_include_directories(
         Test_Plate_containsFries PUBLIC
         "${PROJECT_BINARY_DIR}"
-        "../../../../../src"
+        "${PROJECT_SOURCE_DIR}/src"
 )
 
 gtest_discover_tests(Test_Plate_containsFries)
