@@ -6,7 +6,7 @@ namespace agent {
     namespace rules {
 
         class Rule {
-
+            virtual void apply() = 0;
         };
 
     } // agent
