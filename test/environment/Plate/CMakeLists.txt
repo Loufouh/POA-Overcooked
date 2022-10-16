@@ -1,3 +1,4 @@
+add_subdirectory(namespace)
 add_subdirectory(constructor)
 add_subdirectory(isEmpty)
 add_subdirectory(isReady)
