@@ -2,9 +2,9 @@
 #include "environment/objects/Machine/Machine.h"
 
 TEST(Machine_namespace, Machine) {
-    environment::Machine machine;
+    environment::objects::Machine machine;
 }
 
 TEST(Machine_namespace, MachineState) {
-    environment::MachineState state;
+    environment::objects::MachineState state;
 }

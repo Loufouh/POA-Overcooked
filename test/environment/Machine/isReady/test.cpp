@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "environment/objects/Machine/Machine.h"
 
-using namespace environment;
+using namespace environment::objects;
 
 TEST(Machine_isReady, freeState) {
     Machine machine;

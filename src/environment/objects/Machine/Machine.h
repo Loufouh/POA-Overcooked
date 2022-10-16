@@ -3,25 +3,29 @@
 #define POA_OVERCOOKED_MACHINE_H
 
 namespace environment {
-    enum class MachineState {
-        free,
-        cooking,
-        ready,
-        hasProblem
-    };
+    namespace objects {
+        enum class MachineState {
+            free,
+            cooking,
+            ready,
+            hasProblem
+        };
 
-    class Machine {
-    public:
-        MachineState state;
+        class Machine {
+        public:
+            MachineState state;
 
-        Machine();
+            Machine();
 
-        bool isFree();
-        bool isCooking();
-        bool isReady();
-        bool hasProblem();
-    };
+            bool isFree();
 
+            bool isCooking();
+
+            bool isReady();
+
+            bool hasProblem();
+        };
+    }
 } // environment
 
 #endif //POA_OVERCOOKED_MACHINE_H
