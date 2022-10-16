@@ -4,6 +4,8 @@ add_library(
         rules/Action/Action.cpp rules/Action/Action.h
 
         rules/Rule/Rule.cpp rules/Rule/Rule.h
+
+        rules/Set/Set.cpp rules/Set/Set.h
 )
 target_include_directories(
         agent PUBLIC
