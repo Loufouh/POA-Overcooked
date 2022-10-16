@@ -3,7 +3,7 @@
 
 using namespace environment::objects;
 
-TEST(Machine_constructor, state) {
+TEST(environment_objects_Machine_constructor, state) {
     Machine machine;
 
     EXPECT_EQ(

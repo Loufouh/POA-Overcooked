@@ -3,7 +3,7 @@
 
 using namespace environment::objects;
 
-TEST(Box_constructor, state) {
+TEST(environment_objects_Box_constructor, state) {
     Box box;
 
     EXPECT_EQ(

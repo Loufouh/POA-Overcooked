@@ -1,16 +1,16 @@
 add_executable(
-        Test_Machine_constructor
+        Test_environment_objects_Machine_constructor
         test.cpp
 )
 target_link_libraries(
-        Test_Machine_constructor
+        Test_environment_objects_Machine_constructor
         environment
         GTest::gtest_main
 )
 target_include_directories(
-        Test_Machine_constructor PUBLIC
+        Test_environment_objects_Machine_constructor PUBLIC
         "${PROJECT_BINARY_DIR}"
         "${PROJECT_SOURCE_DIR}/src"
 )
 
-gtest_discover_tests(Test_Machine_constructor)
+gtest_discover_tests(Test_environment_objects_Machine_constructor)

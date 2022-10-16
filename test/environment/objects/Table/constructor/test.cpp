@@ -3,7 +3,7 @@
 
 using namespace environment::objects;
 
-TEST(Table_constructor, state) {
+TEST(environment_objects_Table_constructor, state) {
     Table table;
 
     EXPECT_EQ(

@@ -1,10 +1,10 @@
 #include <gtest/gtest.h>
 #include "environment/objects/Box/Box.h"
 
-TEST(Box_namespace, Box) {
+TEST(environment_objects_Box_namespace, Box) {
     environment::objects::Box box;
 }
 
-TEST(Box_namespace, BoxState) {
+TEST(environment_objects_Box_namespace, BoxState) {
     environment::objects::BoxState state;
 }

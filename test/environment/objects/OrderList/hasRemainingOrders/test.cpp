@@ -3,7 +3,7 @@
 
 using namespace environment::objects;
 
-TEST(OrerList_hasRemainingOrders, hasNoOrdersState) {
+TEST(environment_objects_OrerList_hasRemainingOrders, hasNoOrdersState) {
     OrderList orderList;
 
     orderList.state = OrderListState::hasNoOrders;
@@ -11,7 +11,7 @@ TEST(OrerList_hasRemainingOrders, hasNoOrdersState) {
     EXPECT_FALSE(orderList.hasRemainingOrders());
 }
 
-TEST(OrderList_hasRemainingOrders, hasOrdersState) {
+TEST(environment_objects_OrderList_hasRemainingOrders, hasOrdersState) {
     OrderList orderList;
 
     orderList.state = OrderListState::hasOrders;

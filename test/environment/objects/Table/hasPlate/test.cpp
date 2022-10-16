@@ -3,7 +3,7 @@
 
 using namespace environment::objects;
 
-TEST(Table_hasPlate, hasNoPlateState) {
+TEST(environment_objects_Table_hasPlate, hasNoPlateState) {
     Table table;
 
     table.state = TableState::hasNoPlate;
@@ -11,7 +11,7 @@ TEST(Table_hasPlate, hasNoPlateState) {
     EXPECT_FALSE(table.hasPlate());
 }
 
-TEST(Table_hasPlate, hasPlateState) {
+TEST(environment_objects_Table_hasPlate, hasPlateState) {
     Table table;
 
     table.state = TableState::hasPlate;

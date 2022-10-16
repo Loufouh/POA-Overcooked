@@ -3,7 +3,7 @@
 
 using namespace environment::objects;
 
-TEST(Plate_constructor, state) {
+TEST(environment_objects_Plate_constructor, state) {
     Plate plate;
 
     EXPECT_EQ(

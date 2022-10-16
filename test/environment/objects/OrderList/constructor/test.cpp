@@ -3,7 +3,7 @@
 
 using namespace environment::objects;
 
-TEST(OrderList_constructor, state) {
+TEST(environment_objects_OrderList_constructor, state) {
     OrderList orderList;
 
     EXPECT_EQ(

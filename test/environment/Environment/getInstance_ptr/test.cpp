@@ -3,13 +3,13 @@
 
 using namespace environment;
 
-TEST(Environment_getInstance_ptr, oneCall) {
+TEST(environment_Environment_getInstance_ptr, oneCall) {
     Environment *environment = Environment::getInstance_ptr();
 
     EXPECT_NE(environment, nullptr);
 }
 
-TEST(Environment_getInstance_ptr, twoCalls) {
+TEST(environment_Environment_getInstance_ptr, twoCalls) {
     Environment *environment1 = Environment::getInstance_ptr();
     Environment *environment2 = Environment::getInstance_ptr();
 

@@ -3,7 +3,7 @@
 
 using namespace environment::objects;
 
-TEST(Machine_isFree, freeState) {
+TEST(environment_objects_Machine_isFree, freeState) {
     Machine machine;
 
     machine.state = MachineState::free;
@@ -11,7 +11,7 @@ TEST(Machine_isFree, freeState) {
     EXPECT_TRUE(machine.isFree());
 }
 
-TEST(Machine_isFree, cookingState) {
+TEST(environment_objects_Machine_isFree, cookingState) {
     Machine machine;
 
     machine.state = MachineState::cooking;
@@ -19,7 +19,7 @@ TEST(Machine_isFree, cookingState) {
     EXPECT_FALSE(machine.isFree());
 }
 
-TEST(Machine_isFree, readyState) {
+TEST(environment_objects_Machine_isFree, readyState) {
     Machine machine;
 
     machine.state = MachineState::ready;
@@ -27,7 +27,7 @@ TEST(Machine_isFree, readyState) {
     EXPECT_FALSE(machine.isFree());
 }
 
-TEST(Machine_isFree, hasProblemState) {
+TEST(environment_objects_Machine_isFree, hasProblemState) {
     Machine machine;
 
     machine.state = MachineState::hasProblem;

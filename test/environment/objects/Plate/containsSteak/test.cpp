@@ -3,7 +3,7 @@
 
 using namespace environment::objects;
 
-TEST(Plate_containsSteak, emptyState) {
+TEST(environment_objects_containsSteak, emptyState) {
     Plate plate;
 
     plate.state = PlateState::empty;
@@ -11,7 +11,7 @@ TEST(Plate_containsSteak, emptyState) {
     EXPECT_FALSE(plate.containsSteak());
 }
 
-TEST(Plate_containsSteak, steakOnlyState) {
+TEST(environment_objects_containsSteak, steakOnlyState) {
     Plate plate;
 
     plate.state = PlateState::steakOnly;
@@ -19,7 +19,7 @@ TEST(Plate_containsSteak, steakOnlyState) {
     EXPECT_TRUE(plate.containsSteak());
 }
 
-TEST(Plate_containsSteak, friesOnlyState) {
+TEST(environment_objects_containsSteak, friesOnlyState) {
     Plate plate;
 
     plate.state = PlateState::friesOnly;
@@ -27,7 +27,7 @@ TEST(Plate_containsSteak, friesOnlyState) {
     EXPECT_FALSE(plate.containsSteak());
 }
 
-TEST(Plate_containsSteak, readyState) {
+TEST(environment_objects_containsSteak, readyState) {
     Plate plate;
 
     plate.state = PlateState::ready;

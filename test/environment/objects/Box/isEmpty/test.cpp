@@ -3,7 +3,7 @@
 
 using namespace environment::objects;
 
-TEST(Box_isEmpty, emptyState) {
+TEST(environment_objects_Box_isEmpty, emptyState) {
     Box box;
 
     box.state = BoxState::empty;
@@ -11,7 +11,7 @@ TEST(Box_isEmpty, emptyState) {
     EXPECT_TRUE(box.isEmpty());
 }
 
-TEST(Box_isEmpty, notEmptyState) {
+TEST(environment_objects_Box_isEmpty, notEmptyState) {
     Box box;
 
     box.state = BoxState::notEmpty;
