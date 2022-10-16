@@ -2,9 +2,9 @@
 #include "Box.h"
 
 namespace environment {
-    Box::Box(): state{notEmpty} {}
+    Box::Box(): state{BoxState::notEmpty} {}
 
     bool Box::isEmpty() {
-        return state == empty;
+        return state == BoxState::empty;
     }
 } // environment

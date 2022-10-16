@@ -3,7 +3,7 @@
 #define POA_OVERCOOKED_MACHINE_H
 
 namespace environment {
-    enum MachineState {
+    enum class MachineState {
         free,
         cooking,
         ready,

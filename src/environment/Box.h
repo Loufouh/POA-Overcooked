@@ -3,7 +3,7 @@
 #define POA_OVERCOOKED_BOX_H
 
 namespace environment {
-    enum BoxState {
+    enum class BoxState {
         empty,
         notEmpty
     };

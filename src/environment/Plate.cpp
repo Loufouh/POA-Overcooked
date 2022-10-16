@@ -2,7 +2,7 @@
 #include "Plate.h"
 
 namespace environment {
-    Plate::Plate(): state{empty} {}
+    Plate::Plate(): state{PlateState::empty} {}
 
     bool Plate::isEmpty() {
         return state == PlateState::empty;

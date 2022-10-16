@@ -3,7 +3,7 @@
 #define POA_OVERCOOKED_PLATE_H
 
 namespace environment {
-    enum PlateState {
+    enum class PlateState {
         empty,
         steakOnly,
         friesOnly,

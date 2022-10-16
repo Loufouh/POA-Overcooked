@@ -3,7 +3,7 @@
 #define POA_OVERCOOKED_TABLE_H
 
 namespace environment {
-    enum TableState {
+    enum class TableState {
         hasPlate,
         hasNoPlate
     };

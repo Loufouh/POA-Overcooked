@@ -6,7 +6,7 @@ using namespace environment;
 TEST(OrerList_hasRemainingOrders, hasNoOrdersState) {
     OrderList orderList;
 
-    orderList.state = hasNoOrders;
+    orderList.state = OrderListState::hasNoOrders;
 
     EXPECT_FALSE(orderList.hasRemainingOrders());
 }
@@ -14,7 +14,7 @@ TEST(OrerList_hasRemainingOrders, hasNoOrdersState) {
 TEST(OrderList_hasRemainingOrders, hasOrdersState) {
     OrderList orderList;
 
-    orderList.state = hasOrders;
+    orderList.state = OrderListState::hasOrders;
 
     EXPECT_TRUE(orderList.hasRemainingOrders());
 }

@@ -2,9 +2,9 @@
 #include "OrderList.h"
 
 namespace environment {
-    OrderList::OrderList(): state{hasNoOrders} {}
+    OrderList::OrderList(): state{OrderListState::hasNoOrders} {}
 
     bool OrderList::hasRemainingOrders() {
-        return state == hasOrders;
+        return state == OrderListState::hasOrders;
     }
 } // environment

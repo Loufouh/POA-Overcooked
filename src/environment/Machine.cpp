@@ -2,7 +2,7 @@
 #include "Machine.h"
 
 namespace environment {
-    Machine::Machine(): state{free} {}
+    Machine::Machine(): state{MachineState::free} {}
 
     bool Machine::isFree() {
         return state == MachineState::free;

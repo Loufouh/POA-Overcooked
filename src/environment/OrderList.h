@@ -3,7 +3,7 @@
 #define POA_OVERCOOKED_ORDERLIST_H
 
 namespace environment {
-    enum OrderListState {
+    enum class OrderListState {
         hasOrders,
         hasNoOrders
     };
