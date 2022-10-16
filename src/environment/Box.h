@@ -13,6 +13,8 @@ namespace environment {
         BoxState state;
 
         Box();
+
+        bool isEmpty();
     };
 
 } // environment
