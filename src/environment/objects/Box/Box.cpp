@@ -9,4 +9,4 @@ namespace environment {
             return state == BoxState::empty;
         }
     }
-} // environment
+}

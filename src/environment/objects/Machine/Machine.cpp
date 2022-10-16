@@ -21,4 +21,4 @@ namespace environment {
             return state == MachineState::hasProblem;
         }
     }
-} // environment
+}

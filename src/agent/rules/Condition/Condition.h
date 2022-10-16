@@ -10,7 +10,7 @@ namespace agent {
             virtual bool isVerified() = 0;
         };
 
-    } // agent
-} // rules
+    }
+}
 
 #endif //POA_OVERCOOKED_CONDITION_H

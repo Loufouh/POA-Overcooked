@@ -26,6 +26,6 @@ namespace environment {
             bool containsFries();
         };
     }
-} // environment
+}
 
 #endif //POA_OVERCOOKED_PLATE_H

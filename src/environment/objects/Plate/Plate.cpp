@@ -23,4 +23,4 @@ namespace environment {
                    || state == PlateState::ready;
         }
     }
-} // environment
+}

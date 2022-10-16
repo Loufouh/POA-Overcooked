@@ -26,6 +26,6 @@ namespace environment {
             bool hasProblem();
         };
     }
-} // environment
+}
 
 #endif //POA_OVERCOOKED_MACHINE_H

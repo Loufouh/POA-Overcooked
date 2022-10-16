@@ -18,6 +18,6 @@ namespace environment {
             bool hasRemainingOrders();
         };
     }
-} // environment
+}
 
 #endif //POA_OVERCOOKED_ORDERLIST_H

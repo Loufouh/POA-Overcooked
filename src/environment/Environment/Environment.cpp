@@ -11,6 +11,5 @@ namespace environment {
 
         return instance_ptr;
     }
-
     Environment::Environment() {}
-} // environment
+}

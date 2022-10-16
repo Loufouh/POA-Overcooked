@@ -32,7 +32,6 @@ namespace environment {
 
         Plate plate;
     };
-
-} // environment
+}
 
 #endif //POA_OVERCOOKED_ENVIRONMENT_H

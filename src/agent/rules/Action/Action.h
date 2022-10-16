@@ -9,7 +9,7 @@ namespace agent {
             virtual void execute() = 0;
         };
 
-    } // agent
-} // rules
+    }
+}
 
 #endif //POA_OVERCOOKED_ACTION_H

@@ -18,6 +18,6 @@ namespace environment {
             bool hasPlate();
         };
     }
-} // environment
+}
 
 #endif //POA_OVERCOOKED_TABLE_H

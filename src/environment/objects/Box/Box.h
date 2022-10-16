@@ -18,6 +18,6 @@ namespace environment {
             bool isEmpty();
         };
     }
-} // environment
+}
 
 #endif //POA_OVERCOOKED_BOX_H

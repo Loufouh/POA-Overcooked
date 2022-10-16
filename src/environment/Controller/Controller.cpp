@@ -13,4 +13,4 @@ namespace environment {
 
         return instance_ptr;
     }
-} // environment
+}

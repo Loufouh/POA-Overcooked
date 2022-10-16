@@ -11,7 +11,6 @@ namespace environment {
     public:
         static Controller *getInstance_ptr();
     };
-
-} // environment
+}
 
 #endif //POA_OVERCOOKED_CONTROLLER_H
