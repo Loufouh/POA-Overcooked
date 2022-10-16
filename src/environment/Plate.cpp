@@ -16,4 +16,9 @@ namespace environment {
         return state == PlateState::steakOnly
             || state == PlateState::ready;
     }
+
+    bool Plate::containsFries() {
+        return state == PlateState::friesOnly
+            || state == PlateState::ready;
+    }
 } // environment
