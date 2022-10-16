@@ -1,10 +1,10 @@
 #include <gtest/gtest.h>
-#include "environment/Environment.h"
-#include "environment/OrderList.h"
-#include "environment/Machine.h"
-#include "environment/Box.h"
-#include "environment/Table.h"
-#include "environment/Plate.h"
+#include "environment/Environment/Environment.h"
+#include "environment/OrderList/OrderList.h"
+#include "environment/Machine/Machine.h"
+#include "environment/Box/Box.h"
+#include "environment/Table/Table.h"
+#include "environment/Plate/Plate.h"
 
 using namespace environment;
 

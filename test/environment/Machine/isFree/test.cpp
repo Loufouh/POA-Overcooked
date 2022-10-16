@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "environment/Machine.h"
+#include "environment/Machine/Machine.h"
 
 using namespace environment;
 

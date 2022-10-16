@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "environment/Table.h"
+#include "environment/Table/Table.h"
 
 using namespace environment;
 

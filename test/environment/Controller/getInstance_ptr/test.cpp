@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "environment/Controller.h"
+#include "environment/Controller/Controller.h"
 
 using namespace environment;
 
