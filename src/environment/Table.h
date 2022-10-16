@@ -13,6 +13,8 @@ namespace environment {
         TableState state;
 
         Table();
+
+        bool hasPlate();
     };
 
 } // environment
