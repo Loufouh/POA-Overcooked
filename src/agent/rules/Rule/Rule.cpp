@@ -3,5 +3,5 @@
 
 namespace agent {
     namespace rules {
-    } // agent
-} // rules
+    }
+}
