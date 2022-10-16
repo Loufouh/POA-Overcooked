@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "environment/Box/Box.h"
+#include "environment/objects/Box/Box.h"
 
 using namespace environment;
 

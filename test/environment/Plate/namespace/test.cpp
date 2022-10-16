@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "environment/Plate/Plate.h"
+#include "environment/objects/Plate/Plate.h"
 
 TEST(Plate_namespace, Plate) {
     environment::Plate plate;
