@@ -9,4 +9,5 @@ FetchContent_MakeAvailable(googletest)
 include(GoogleTest)
 
 add_subdirectory(environment)
+add_subdirectory(agent)
 
