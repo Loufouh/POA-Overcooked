@@ -3,25 +3,29 @@
 #define POA_OVERCOOKED_PLATE_H
 
 namespace environment {
-    enum class PlateState {
-        empty,
-        steakOnly,
-        friesOnly,
-        ready
-    };
+    namespace objects {
+        enum class PlateState {
+            empty,
+            steakOnly,
+            friesOnly,
+            ready
+        };
 
-    class Plate {
-    public:
-        PlateState state;
+        class Plate {
+        public:
+            PlateState state;
 
-        Plate();
+            Plate();
 
-        bool isEmpty();
-        bool isReady();
-        bool containsSteak();
-        bool containsFries();
-    };
+            bool isEmpty();
 
+            bool isReady();
+
+            bool containsSteak();
+
+            bool containsFries();
+        };
+    }
 } // environment
 
 #endif //POA_OVERCOOKED_PLATE_H

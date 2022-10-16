@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "environment/objects/Plate/Plate.h"
 
-using namespace environment;
+using namespace environment::objects;
 
 TEST(Plate_containsFries, emptyState) {
     Plate plate;

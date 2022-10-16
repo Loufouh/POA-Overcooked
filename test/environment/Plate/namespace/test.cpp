@@ -2,9 +2,9 @@
 #include "environment/objects/Plate/Plate.h"
 
 TEST(Plate_namespace, Plate) {
-    environment::Plate plate;
+    environment::objects::Plate plate;
 }
 
 TEST(Plate_namespace, PlateState) {
-    environment::PlateState state;
+    environment::objects::PlateState state;
 }
