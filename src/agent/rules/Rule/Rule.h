@@ -14,7 +14,9 @@ namespace agent {
             Action action;
 
         public:
-            virtual void apply() {};
+            Rule(Condition condition, Action action);
+
+            virtual void apply();
         };
 
     } // agent

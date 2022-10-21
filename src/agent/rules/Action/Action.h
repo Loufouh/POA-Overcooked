@@ -6,6 +6,7 @@ namespace agent {
     namespace rules {
 
         class Action {
+        public:
             virtual void execute() {};
         };
 
