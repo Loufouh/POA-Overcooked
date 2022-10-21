@@ -7,7 +7,7 @@ namespace agent {
 
         class Condition {
         public:
-            virtual bool isVerified() = 0;
+            virtual bool isVerified() {return false;};
         };
 
     }

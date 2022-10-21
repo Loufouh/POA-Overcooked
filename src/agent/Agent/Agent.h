@@ -21,7 +21,7 @@ namespace agent {
         bool isCooking();
         bool isShutdown();
 
-        static Agent *getIntance_ptr();
+        static Agent *getInstance_ptr();
     };
 
 }

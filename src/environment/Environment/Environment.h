@@ -2,11 +2,11 @@
 #ifndef POA_OVERCOOKED_ENVIRONMENT_H
 #define POA_OVERCOOKED_ENVIRONMENT_H
 
-#include "objects/OrderList/OrderList.h"
-#include "objects/Machine/Machine.h"
-#include "objects/Box/Box.h"
-#include "objects/Table/Table.h"
-#include "objects/Plate/Plate.h"
+#include "environment/objects/OrderList/OrderList.h"
+#include "environment/objects/Machine/Machine.h"
+#include "environment/objects/Box/Box.h"
+#include "environment/objects/Table/Table.h"
+#include "environment/objects/Plate/Plate.h"
 
 namespace environment {
     using namespace objects;

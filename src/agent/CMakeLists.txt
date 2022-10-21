@@ -7,7 +7,7 @@ add_library(
         rules/Set/Set.cpp rules/Set/Set.h
 
         Agent/Agent.cpp Agent/Agent.h
-)
+        rules/Condition/BeginCookingCondition/BeginCookingCondition.cpp rules/Condition/BeginCookingCondition/BeginCookingCondition.h)
 target_include_directories(
         agent PUBLIC
         "${PROJECT_BINARY_DIR}"

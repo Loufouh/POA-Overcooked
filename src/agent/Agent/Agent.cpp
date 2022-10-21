@@ -20,7 +20,7 @@ namespace agent {
         state = newState;
     }
 
-    Agent *Agent::getIntance_ptr() {
+    Agent *Agent::getInstance_ptr() {
          if(instance_ptr == nullptr) {
             instance_ptr = new Agent();
         }
