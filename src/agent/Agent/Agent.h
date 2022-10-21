@@ -13,6 +13,7 @@ namespace agent {
     private:
         AgentState state;
 
+    public:
         void setState(AgentState newState);
         bool isWaiting();
         bool isCooking();
