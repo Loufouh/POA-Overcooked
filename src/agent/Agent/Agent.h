@@ -11,6 +11,8 @@ namespace agent {
 
     class Agent {
     private:
+        static Agent *instance_ptr;
+
         AgentState state;
 
     public:
@@ -18,6 +20,8 @@ namespace agent {
         bool isWaiting();
         bool isCooking();
         bool isShutdown();
+
+        static Agent *getIntance_ptr();
     };
 
 }
