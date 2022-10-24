@@ -12,27 +12,20 @@ namespace environment {
 
         return instance_ptr;
     }
-    void cookSteak(){Environment::getinstance_ptr().pan.state = cooking;}
+    void cookSteak(){ Environment::getInstance_ptr()->pan.state = environment::objects::MachineState::cooking;}
     
-    void cookFries() {Environment::getinstance_ptr().frier.state = cooking;}
+    void cookFries() {Environment::getInstance_ptr()->frier.state = environment::objects::MachineState::cooking;}
     
     void putPlateOnTable() {
-        Environment::getinstance_ptr().plate.state = empty;
-        Environment::getinstance_ptr().table.state = hasPlate;
+        Environment::getInstance_ptr()->plate.state =  environment::objects::PlateState::empty;
+        Environment::getInstance_ptr()->table.state = environment::objects::TableState::hasPlate;
     }
     
-    void garnishSteak() {
-        Environment::getinstance_ptr().plate.state = steakOnly;   
-    }
+    void garnishSteak() {Environment::getInstance_ptr()->plate.state = environment::objects::PlateState::steakOnly;}
     
-    void garnishFries() {
-        Environment::getinstance_ptr().plate.state = friesOnly;   
-                    
-    }
+    void garnishFries() {Environment::getInstance_ptr()->plate.state = environment::objects::PlateState::friesOnly; }
     
-    void ring (){        
-             Environment::getinstance_ptr().table.state = empty;
-    }
+    void ring (){Environment::getInstance_ptr()->table.state = environment::objects::TableState::hasNoPlate;}
     
     void update() {
         
