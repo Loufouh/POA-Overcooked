@@ -24,6 +24,8 @@ namespace environment {
             bool containsSteak();
 
             bool containsFries();
+
+            void print_state();
         };
     }
 }
