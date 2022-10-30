@@ -14,6 +14,10 @@ add_library(
         rules/Condition/CookInFrierCondition/CookInFrierCondition.cpp rules/Condition/CookInFrierCondition/CookInFrierCondition.h rules/Action/CookInFrierAction/CookInFrierAction.cpp rules/Action/CookInFrierAction/CookInFrierAction.h rules/Rule/CookInFrierRule/CookInFrierRule.cpp rules/Rule/CookInFrierRule/CookInFrierRule.h
         rules/Condition/PutSteakOnPanCondition/PutSteakOnPanCondition.cpp rules/Condition/PutSteakOnPanCondition/PutSteakOnPanCondition.h
 )
+target_link_libraries(
+        agent
+        environment
+)
 target_include_directories(
         agent PUBLIC
         "${PROJECT_BINARY_DIR}"

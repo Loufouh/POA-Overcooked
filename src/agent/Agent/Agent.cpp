@@ -1,7 +1,7 @@
 
 #include "Agent.h"
-#include "environment/Controller/Controller.h"
-#include "environment/Environment/Environment.h"
+#include <environment/Controller/Controller.h>
+#include <environment/Environment/Environment.h>
 #include <iostream>
 
 namespace agent {
