@@ -49,6 +49,7 @@ namespace environment {
         if( object == "quit" ) { quit = 1; return; }
 
         std::cin >> state;
+        transform(state.begin(), state.end(), state.begin(), ::tolower);
 
         if( object == "orderlist" )
         {
