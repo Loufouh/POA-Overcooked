@@ -25,6 +25,11 @@ namespace environment {
 
             bool hasProblem();
 
+            void setFree();
+            void setCooking();
+            void setReady();
+            void setProblem();
+
             void print_state();
         };
     }

@@ -25,6 +25,11 @@ namespace environment {
 
             bool containsFries();
 
+            void setEmpty();
+            void setSteakOnly();
+            void setFrierOnly();
+            void setReady();
+
             void print_state();
         };
     }

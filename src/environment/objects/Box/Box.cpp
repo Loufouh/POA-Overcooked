@@ -10,6 +10,9 @@ namespace environment {
             return state == BoxState::empty;
         }
 
+        void Box::setEmpty() { state = BoxState::empty; }
+        void Box::setNotEmpty() { state = BoxState::notEmpty; }
+
         void Box::print_state()
         {
             switch( state )

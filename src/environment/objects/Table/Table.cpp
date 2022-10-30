@@ -10,6 +10,9 @@ namespace environment {
             return state == TableState::hasPlate;
         }
 
+        void Table::setPlate() { state = TableState::hasPlate; }
+        void Table::setNoPlate() { state = TableState::hasNoPlate; }
+
         void Table::print_state()
         {
             switch( state )

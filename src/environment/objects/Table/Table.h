@@ -17,6 +17,9 @@ namespace environment {
 
             bool hasPlate();
 
+            void setPlate();
+            void setNoPlate();
+
             void print_state();
         };
     }

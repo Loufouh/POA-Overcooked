@@ -22,6 +22,11 @@ namespace environment {
             return state == MachineState::hasProblem;
         }
 
+        void Machine::setFree() { state = MachineState::free; }
+        void Machine::setCooking() { state = MachineState::cooking; }
+        void Machine::setReady() { state = MachineState::ready; }
+        void Machine::setProblem() { state = MachineState::hasProblem; }
+
         void Machine::print_state()
         {
             switch( state )

@@ -25,6 +25,8 @@ namespace agent {
 
         void print_state();
         void print();
+
+        void main_loop();
     };
 
 }

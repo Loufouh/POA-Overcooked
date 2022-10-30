@@ -10,6 +10,9 @@ namespace environment {
             return state == OrderListState::hasOrders;
         }
 
+        void OrderList::setOrders() { state = OrderListState::hasOrders; }
+        void OrderList::setNoOrders() { state = OrderListState::hasNoOrders; }
+
         void OrderList::print_state()
         {
             switch( state )

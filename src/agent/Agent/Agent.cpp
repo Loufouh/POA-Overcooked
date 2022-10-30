@@ -1,5 +1,6 @@
 
 #include "Agent.h"
+#include "environment/Controller/Controller.h"
 #include "environment/Environment/Environment.h"
 #include <iostream>
 
@@ -59,5 +60,19 @@ namespace agent {
         std::cout << " Table                        | "; env.table.print_state();       std::cout << "\n";
         std::cout << " Plate                        | "; env.plate.print_state();       std::cout << "\n";
         std::cout << "\n";
+    }
+
+    void Agent::main_loop()
+    {
+        environment::Controller& controller = *environment::Controller::getInstance_ptr();
+        int quit = 0;
+
+        while( !quit && !isShutdown() )
+        { 
+            print();
+            controller.UserInputs(quit);
+            // agent.processRules(); TODO
+        }
+
     }
 }

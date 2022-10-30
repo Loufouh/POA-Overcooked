@@ -16,6 +16,9 @@ namespace environment {
             OrderList();
 
             bool hasRemainingOrders();
+
+            void setOrders();
+            void setNoOrders();
             
             void print_state();
         };

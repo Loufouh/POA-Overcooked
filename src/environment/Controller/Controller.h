@@ -1,4 +1,3 @@
-#include "environment/Environment/Environment.h"
 #ifndef POA_OVERCOOKED_CONTROLLER_H
 #define POA_OVERCOOKED_CONTROLLER_H
 
@@ -10,7 +9,7 @@ namespace environment {
         Controller();
     public:
         static Controller *getInstance_ptr();
-        void update();
+        void UserInputs( int& quit );
         void cookSteak();
         void cookFries();
         void putPlateOnTable();

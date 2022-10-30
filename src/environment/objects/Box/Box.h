@@ -16,6 +16,9 @@ namespace environment {
             Box();
 
             bool isEmpty();
+
+            void setEmpty();
+            void setNotEmpty();
             
             void print_state();
         };

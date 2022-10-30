@@ -24,6 +24,11 @@ namespace environment {
                    || state == PlateState::ready;
         }
 
+        void Plate::setEmpty() { state = PlateState::empty; }
+        void Plate::setSteakOnly() { state = PlateState::steakOnly; }
+        void Plate::setFrierOnly() { state = PlateState::friesOnly; }
+        void Plate::setReady() { state = PlateState::ready; }
+
         void Plate::print_state()
         {
             switch( state )
