@@ -22,6 +22,9 @@ namespace agent {
         bool isShutdown();
 
         static Agent *getInstance_ptr();
+
+        void print_state();
+        void print();
     };
 
 }

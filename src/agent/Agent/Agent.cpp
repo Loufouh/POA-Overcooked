@@ -1,5 +1,7 @@
 
 #include "Agent.h"
+#include "environment/Environment/Environment.h"
+#include <iostream>
 
 namespace agent {
     Agent *Agent::instance_ptr = nullptr;
@@ -26,5 +28,36 @@ namespace agent {
         }
 
         return instance_ptr;
+    }
+
+    void Agent::print_state()
+    {
+        switch( state )
+        {
+            case AgentState::waiting : std::cout << "is waiting"; break;
+            case AgentState::cooking : std::cout << "is cooking"; break;
+            case AgentState::shutdown : std::cout << "has shut down"; break;
+            default : std::cout << "?"; break;
+        }
+
+    }
+
+    void Agent::print()
+    {
+        environment::Environment& env = *environment::Environment::getInstance_ptr();
+
+        std::cout << "\n";
+        std::cout << " Object                       | State of the object              \n";
+        std::cout << " -------------------------------------------------------------";
+        std::cout << " Agent                        | "; this->print_state();           std::cout << "\n";
+        std::cout << " Order list                   | "; env.orderList.print_state();   std::cout << "\n";
+        std::cout << " Pan                          | "; env.pan.print_state();         std::cout << "\n";
+        std::cout << " Frier                        | "; env.frier.print_state();       std::cout << "\n";
+        std::cout << " Steak box                    | "; env.steaksBox.print_state();   std::cout << "\n";
+        std::cout << " Fries box                    | "; env.friesBox.print_state();    std::cout << "\n";
+        std::cout << " Plates box                   | "; env.platesBox.print_state();   std::cout << "\n";
+        std::cout << " Table                        | "; env.table.print_state();       std::cout << "\n";
+        std::cout << " Plate                        | "; env.plate.print_state();       std::cout << "\n";
+        std::cout << "\n";
     }
 }

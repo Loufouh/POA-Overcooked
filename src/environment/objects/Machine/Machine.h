@@ -24,6 +24,8 @@ namespace environment {
             bool isReady();
 
             bool hasProblem();
+
+            void print_state();
         };
     }
 }
