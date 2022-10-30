@@ -16,6 +16,8 @@ namespace environment {
             Table();
 
             bool hasPlate();
+
+            void print_state();
         };
     }
 }

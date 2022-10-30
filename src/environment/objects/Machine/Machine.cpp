@@ -1,5 +1,6 @@
 
 #include "Machine.h"
+#include <iostream>
 
 namespace environment {
     namespace objects {
@@ -19,6 +20,18 @@ namespace environment {
 
         bool Machine::hasProblem() {
             return state == MachineState::hasProblem;
+        }
+
+        void Machine::print_state()
+        {
+            switch( state )
+            {
+                case MachineState::free : std::cout << "Free"; break;
+                case MachineState::cooking : std::cout << "Cooking"; break;
+                case MachineState::ready : std::cout << "Ready"; break;
+                case MachineState::hasProblem : std::cout << "hasProblem"; break;
+                default : std::cout << "?"; break;
+            }
         }
     }
 }
