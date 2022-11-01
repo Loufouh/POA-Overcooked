@@ -1,5 +1,5 @@
 
-#include "CookInFrierCondition/CookInFrierCondition.h"
+#include "CookInFrierCondition.h"
 #include "environment/Environment/Environment.h"
 #include "Agent/Agent.h"
 

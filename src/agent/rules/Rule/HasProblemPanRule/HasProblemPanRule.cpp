@@ -7,8 +7,8 @@ namespace agent {
     namespace rules {
         HasProblemPanRule::HasProblemPanRule() : Rule(HasProblemPanCondition(), HasProblemPanAction()) {}
 
-        void HasProblemPanRule::apply() {
-            Rule::apply();
+        bool HasProblemPanRule::apply() {
+            return Rule::apply();
         }
     } // agent
 } // rules

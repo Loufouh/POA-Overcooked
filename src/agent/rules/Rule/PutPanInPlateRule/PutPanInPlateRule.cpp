@@ -7,8 +7,8 @@ namespace agent {
     namespace rules {
         PutPanInPlateRule::PutPanInPlateRule() : Rule(PutPanInPlateCondition(), PutPanInPlateAction()) {}
 
-        void PutPanInPlateRule::apply() {
-            Rule::apply();
+        bool PutPanInPlateRule::apply() {
+            return Rule::apply();
         }
     } // agent
 } // rules

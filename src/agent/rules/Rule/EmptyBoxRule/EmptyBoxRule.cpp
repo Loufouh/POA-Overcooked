@@ -7,8 +7,8 @@ namespace agent {
     namespace rules {
         EmptyBoxRule::EmptyBoxRule() : Rule(EmptyBoxCondition(), EmptyBoxAction()) {}
 
-        void EmptyBoxRule::apply() {
-            Rule::apply();
+        bool EmptyBoxRule::apply() {
+            return Rule::apply();
         }
     } // agent
 } // rules

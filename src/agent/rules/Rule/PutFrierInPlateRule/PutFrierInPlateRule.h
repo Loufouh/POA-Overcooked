@@ -10,7 +10,7 @@ namespace agent {
         class PutFrierInPlateRule : public Rule {
         public:
             PutFrierInPlateRule();
-            void apply() override;
+            bool apply() override;
         };
 
     } // agent

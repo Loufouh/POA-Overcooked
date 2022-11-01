@@ -10,7 +10,7 @@ namespace agent {
         class PlateIsReadyRule : public Rule {
         public:
             PlateIsReadyRule();
-            void apply() override;
+            bool apply() override;
         };
 
     } // agent

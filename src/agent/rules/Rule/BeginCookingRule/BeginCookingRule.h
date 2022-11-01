@@ -10,7 +10,7 @@ namespace agent {
         class BeginCookingRule : public Rule {
         public:
             BeginCookingRule();
-            void apply() override;
+            bool apply() override;
         };
 
     } // agent

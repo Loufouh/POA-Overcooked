@@ -1,6 +1,13 @@
-
 #ifndef POA_OVERCOOKED_AGENT_H
 #define POA_OVERCOOKED_AGENT_H
+
+// Crash à 14%
+// #include "agent/Agent/rules/Set/Set.h"
+// Crash à 99%
+// #include "rules/Set/Set.h"
+// #include "agent/rules/Set/Set.h"
+
+#include <agent/rules/Set/Set.h>
 
 namespace agent {
     enum class AgentState {
@@ -12,7 +19,7 @@ namespace agent {
     class Agent {
     private:
         static Agent *instance_ptr;
-
+        agent::rules::Set ruleSet;
         AgentState state;
 
     public:
@@ -25,6 +32,10 @@ namespace agent {
 
         void print_state();
         void print();
+
+        void processRules();
+        
+        void main_loop();
     };
 
 }

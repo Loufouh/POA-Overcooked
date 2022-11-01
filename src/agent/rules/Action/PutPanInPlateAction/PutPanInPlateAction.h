@@ -7,7 +7,7 @@
 namespace agent {
     namespace rules {
 
-        class HasProblemPanAction : public Action {
+        class PutPanInPlateAction : public Action {
             void execute() override;
         };
 

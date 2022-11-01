@@ -16,7 +16,7 @@ namespace agent {
         public:
             Rule(Condition condition, Action action);
 
-            virtual void apply();
+            virtual bool apply();
         };
 
     } // agent

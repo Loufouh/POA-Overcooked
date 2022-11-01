@@ -1,6 +1,6 @@
 
 #include "CookInFrierAction.h"
-#include "src/environment/Controller/Controller.h"
+#include "environment/Controller/Controller.h"
 #include "iostream"
 
 namespace agent {
