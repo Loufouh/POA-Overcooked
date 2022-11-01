@@ -1,15 +1,15 @@
 
-#include "CookInFrierAction.h"
+#include "PutFrierInPlateAction.h"
 #include "src/environment/Controller/Controller.h"
 #include "iostream"
 
 namespace agent {
     namespace rules {
-        void CookInFrierAction::execute() {
+        void PutFrierInPlateAction::execute() {
             environment::Controller &controller = *environment::Controller::getInstance_ptr();
-            controller.cookFries();
+            controller.garnishFries();
 
-            std::cout << "Fries are now cooking !" << std::endl;
+            std::cout << "Plate is granished with fries !" << std::endl;
         }
     } // agent
 } // rules
