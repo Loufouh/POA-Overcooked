@@ -1,10 +1,7 @@
 
 #include "CookInFrierAction.h"
 #include "environment/Controller/Controller.h"
-<<<<<<< HEAD
-=======
-#include "iostream"
->>>>>>> rules
+#include <iostream>
 
 namespace agent {
     namespace rules {

@@ -62,19 +62,6 @@ namespace agent {
         std::cout << "\n";
     }
 
-<<<<<<< HEAD
-    void Agent::main_loop()
-    {
-        environment::Controller& controller = *environment::Controller::getInstance_ptr();
-        int quit = 0;
-
-        while( !quit && !isShutdown() )
-        { 
-            print();
-            controller.UserInputs(quit);
-            // agent.processRules(); TODO
-        }
-=======
     void Agent::processRules()
     {
         ruleSet.applyAll();
@@ -82,7 +69,14 @@ namespace agent {
 
     void Agent::main_loop()
     {
->>>>>>> rules
+        environment::Controller& controller = *environment::Controller::getInstance_ptr();
+        int quit = 0;
 
+        while( !quit && !isShutdown() )
+        { 
+                print();
+                controller.UserInputs(quit);
+                processRules(); 
+        }
     }
 }
