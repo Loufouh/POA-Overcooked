@@ -49,7 +49,7 @@ namespace agent {
 
         std::cout << "\n";
         std::cout << " Object                       | State of the object              \n";
-        std::cout << " -------------------------------------------------------------";
+        std::cout << " -------------------------------------------------------------\n";
         std::cout << " Agent                        | "; this->print_state();           std::cout << "\n";
         std::cout << " Order list                   | "; env.orderList.print_state();   std::cout << "\n";
         std::cout << " Pan                          | "; env.pan.print_state();         std::cout << "\n";

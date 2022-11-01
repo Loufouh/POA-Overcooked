@@ -15,7 +15,7 @@ namespace environment {
                   << "? : print this\n"
                   << "nothing : do nothing\n"
                   << "quit : stop the program\n\n"
-                  << "[object]                          - [state]"
+                  << "[object]                          - [state]\n"
                   << "orderlist                         - { orders, noOrders }\n"
                   << "pan | frier                       - { free, cooking, ready, problem }\n"
                   << "steaksBox | friesBox | platesBox  - { empty, notEmpty }\n"
@@ -33,22 +33,24 @@ namespace environment {
     {
         environment::Environment& env = *Environment::getInstance_ptr();
         retry : 
-        std::cout << "\n\nWhat would you like to modify in the env. ? -> ";
+        std::cout << "\n\nWhat would you like to modify in the env. ?\n";
 
         std::string object;
         std::string state;
 
         // flushes cin
         std::cin.clear();
-        std::cin.ignore(INT_MAX);
-        std::cin >> object;
+        std::cout << "object -> ";
+        std::getline(std::cin, object);
         transform(object.begin(), object.end(), object.begin(), ::tolower);
 
         if( object == "?" ) { printUserInputs(); goto retry; }
         if( object == "nothing" ) return;
         if( object == "quit" ) { quit = 1; return; }
 
-        std::cin >> state;
+        // std::cin >> state;
+        std::cout << "state -> ";
+        std::getline(std::cin, state);
         transform(state.begin(), state.end(), state.begin(), ::tolower);
 
         if( object == "orderlist" )
@@ -136,6 +138,7 @@ namespace environment {
 
         return instance_ptr;
     }
+    
     void cookSteak(){ Environment::getInstance_ptr()->pan.state = environment::objects::MachineState::cooking;}
     
     void cookFries() {Environment::getInstance_ptr()->frier.state = environment::objects::MachineState::cooking;}
