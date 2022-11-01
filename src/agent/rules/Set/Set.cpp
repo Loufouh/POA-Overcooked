@@ -1,5 +1,6 @@
 
 #include "Set.h"
+#include <iostream>
 
 namespace agent {
     namespace rules {
@@ -17,9 +18,13 @@ namespace agent {
 
         void Set::applyAll()
         {
+            std::cout << '\n';
+            
             for( Rule r : ruleSet )
                 if( r.apply() )
                     return;
+            
+            std::cout << "I did not do anything !\n";
         }   
     }
 }

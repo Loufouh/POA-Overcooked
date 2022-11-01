@@ -19,7 +19,6 @@ namespace agent {
             private : 
                 std::vector<Rule> ruleSet;
                 
-
             public : 
                 Set();
                 void applyAll();
