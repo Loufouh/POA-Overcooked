@@ -10,7 +10,7 @@ namespace agent {
         class HasProblemFrierRule : public Rule {
         public:
             HasProblemFrierRule();
-            void apply() override;
+            bool apply() override;
         };
 
     } // agent

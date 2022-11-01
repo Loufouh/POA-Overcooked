@@ -7,8 +7,8 @@ namespace agent {
     namespace rules {
         BeginCookingRule::BeginCookingRule() : Rule(BeginCookingCondition(), BeginCookingAction()) {}
 
-        void BeginCookingRule::apply() {
-            Rule::apply();
+        bool BeginCookingRule::apply() {
+            return Rule::apply();
         }
     } // agent
 } // rules

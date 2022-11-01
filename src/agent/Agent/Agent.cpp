@@ -1,7 +1,7 @@
 
 #include "Agent.h"
-#include <environment/Controller/Controller.h>
 #include <environment/Environment/Environment.h>
+#include <environment/Controller/Controller.h>
 #include <iostream>
 
 namespace agent {
@@ -62,6 +62,7 @@ namespace agent {
         std::cout << "\n";
     }
 
+<<<<<<< HEAD
     void Agent::main_loop()
     {
         environment::Controller& controller = *environment::Controller::getInstance_ptr();
@@ -73,6 +74,15 @@ namespace agent {
             controller.UserInputs(quit);
             // agent.processRules(); TODO
         }
+=======
+    void Agent::processRules()
+    {
+        ruleSet.applyAll();
+    }
+
+    void Agent::main_loop()
+    {
+>>>>>>> rules
 
     }
 }

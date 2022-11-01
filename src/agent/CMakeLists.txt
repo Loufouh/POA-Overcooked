@@ -13,6 +13,9 @@ add_library(
         rules/Condition/HasProblemPanCondition/HasProblemPanCondition.cpp rules/Condition/HasProblemPanCondition/HasProblemPanCondition.h rules/Action/HasProblemPanAction/HasProblemPanAction.cpp rules/Action/HasProblemPanAction/HasProblemPanAction.h rules/Rule/HasProblemPanRule/HasProblemPanRule.cpp rules/Rule/HasProblemPanRule/HasProblemPanRule.h
         rules/Condition/CookInFrierCondition/CookInFrierCondition.cpp rules/Condition/CookInFrierCondition/CookInFrierCondition.h rules/Action/CookInFrierAction/CookInFrierAction.cpp rules/Action/CookInFrierAction/CookInFrierAction.h rules/Rule/CookInFrierRule/CookInFrierRule.cpp rules/Rule/CookInFrierRule/CookInFrierRule.h
         rules/Condition/PutSteakOnPanCondition/PutSteakOnPanCondition.cpp rules/Condition/PutSteakOnPanCondition/PutSteakOnPanCondition.h
+        rules/Condition/PutFrierInPlateCondition/PutFrierInPlateCondition.cpp rules/Condition/PutFrierInPlateCondition/PutFrierInPlateCondition.h rules/Action/PutFrierInPlateAction/PutFrierInPlateAction.cpp rules/Action/PutFrierInPlateAction/PutFrierInPlateAction.h rules/Rule/PutFrierInPlateRule/PutFrierInPlateRule.cpp rules/Rule/PutFrierInPlateRule/PutFrierInPlateRule.h
+        rules/Condition/PutPanInPlateCondition/PutPanInPlateCondition.cpp rules/Condition/PutPanInPlateCondition/PutPanInPlateCondition.h rules/Action/PutPanInPlateAction/PutPanInPlateAction.cpp rules/Action/PutPanInPlateAction/PutPanInPlateAction.h rules/Rule/PutPanInPlateRule/PutPanInPlateRule.cpp rules/Rule/PutPanInPlateRule/PutPanInPlateRule.h
+        rules/Condition/PlateIsReadyCondition/PlateIsReadyCondition.cpp rules/Condition/PlateIsReadyCondition/PlateIsReadyCondition.h rules/Action/PlateIsReadyAction/PlateIsReadyAction.cpp rules/Action/PlateIsReadyAction/PlateIsReadyAction.h rules/Rule/PlateIsReadyRule/PlateIsReadyRule.cpp rules/Rule/PlateIsReadyRule/PlateIsReadyRule.h
 )
 target_link_libraries(
         agent
