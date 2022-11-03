@@ -1,17 +1,17 @@
 
-#ifndef POA_OVERCOOKED_HASPROBLEMPANACTION_H
-#define POA_OVERCOOKED_HASPROBLEMPANACTION_H
+#ifndef POA_OVERCOOKED_PUTPANINPLATEACTION_H
+#define POA_OVERCOOKED_PUTPANINPLATEACTION_H
 
 #include "rules/Action/Action.h"
 
 namespace agent {
     namespace rules {
 
-        class HasProblemPanAction : public Action {
+        class PutPanInPlateAction : public Action {
             void execute() override;
         };
 
     } // agent
 } // rules
 
-#endif //POA_OVERCOOKED_HASPROBLEMPANACTION_H
+#endif //POA_OVERCOOKED_PUTPANINPLATEACTION_H
