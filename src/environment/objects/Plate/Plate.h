@@ -27,7 +27,7 @@ namespace environment {
 
             void setEmpty();
             void setSteakOnly();
-            void setFrierOnly();
+            void setFriesOnly();
             void setReady();
 
             void print_state();

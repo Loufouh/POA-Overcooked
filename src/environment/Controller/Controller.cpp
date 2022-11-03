@@ -114,7 +114,7 @@ namespace environment {
         {
             if( state == "empty" )           env.plate.setEmpty();
             else if( state == "steakonly" )  env.plate.setSteakOnly();
-            else if( state == "friesonly" )  env.plate.setFrierOnly();
+            else if( state == "friesonly" )  env.plate.setFriesOnly();
             else if( state == "ready" )      env.plate.setReady();
             else 
             {
@@ -148,9 +148,21 @@ namespace environment {
         Environment::getInstance_ptr()->table.state = environment::objects::TableState::hasPlate;
     }
     
-    void Controller::garnishSteak() {Environment::getInstance_ptr()->plate.state = environment::objects::PlateState::steakOnly;}
+    void Controller::garnishSteak() 
+    {
+        if( Environment::getInstance_ptr()->plate.containsFries() ) 
+            Environment::getInstance_ptr()->plate.setReady();
+        else                            
+            Environment::getInstance_ptr()->plate.setSteakOnly();
+    }
     
-    void Controller::garnishFries() {Environment::getInstance_ptr()->plate.state = environment::objects::PlateState::friesOnly; }
+    void Controller::garnishFries() 
+    {
+        if( Environment::getInstance_ptr()->plate.containsSteak() ) 
+            Environment::getInstance_ptr()->plate.setReady();
+        else                             
+            Environment::getInstance_ptr()->plate.setFriesOnly();
+    }
     
     void Controller::ring () {Environment::getInstance_ptr()->table.state = environment::objects::TableState::hasNoPlate;}
 }
