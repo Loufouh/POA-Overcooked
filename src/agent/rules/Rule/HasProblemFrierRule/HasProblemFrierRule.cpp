@@ -7,8 +7,8 @@ namespace agent {
     namespace rules {
         HasProblemFrierRule::HasProblemFrierRule() : Rule(HasProblemFrierCondition(), HasProblemFrierAction()) {}
 
-        void HasProblemFrierRule::apply() {
-            Rule::apply();
+        bool HasProblemFrierRule::apply() {
+            return Rule::apply();
         }
     } // agent
 } // rules

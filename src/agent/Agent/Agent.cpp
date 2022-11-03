@@ -1,6 +1,7 @@
 
 #include "Agent.h"
-#include "environment/Environment/Environment.h"
+#include <environment/Environment/Environment.h>
+#include <environment/Controller/Controller.h>
 #include <iostream>
 
 namespace agent {
@@ -59,5 +60,15 @@ namespace agent {
         std::cout << " Table                        | "; env.table.print_state();       std::cout << "\n";
         std::cout << " Plate                        | "; env.plate.print_state();       std::cout << "\n";
         std::cout << "\n";
+    }
+
+    void Agent::processRules()
+    {
+        ruleSet.applyAll();
+    }
+
+    void Agent::main_loop()
+    {
+
     }
 }

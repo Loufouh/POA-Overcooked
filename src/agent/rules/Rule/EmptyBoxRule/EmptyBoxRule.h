@@ -10,7 +10,7 @@ namespace agent {
         class EmptyBoxRule : public Rule {
         public:
             EmptyBoxRule();
-            void apply() override;
+            bool apply() override;
         };
 
     } // agent

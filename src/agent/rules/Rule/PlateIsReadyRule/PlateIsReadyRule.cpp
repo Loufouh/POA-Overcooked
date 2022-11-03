@@ -7,8 +7,8 @@ namespace agent {
     namespace rules {
         PlateIsReadyRule::PlateIsReadyRule() : Rule(PlateIsReadyCondition(), PlateIsReadyAction()) {}
 
-        void PlateIsReadyRule::apply() {
-            Rule::apply();
+        bool PlateIsReadyRule::apply() {
+            return Rule::apply();
         }
     } // agent
 } // rules

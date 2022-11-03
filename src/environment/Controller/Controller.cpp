@@ -25,7 +25,7 @@ namespace environment {
     
     void garnishFries() {Environment::getInstance_ptr()->plate.state = environment::objects::PlateState::friesOnly; }
     
-    void ring (){Environment::getInstance_ptr()->table.state = environment::objects::TableState::hasNoPlate;}
+    void ring () {Environment::getInstance_ptr()->table.state = environment::objects::TableState::hasNoPlate;}
     
     void update() {
         

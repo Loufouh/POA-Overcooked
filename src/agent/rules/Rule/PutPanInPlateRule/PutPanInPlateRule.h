@@ -10,7 +10,7 @@ namespace agent {
         class PutPanInPlateRule : public Rule {
         public:
             PutPanInPlateRule();
-            void apply() override;
+            bool apply() override;
         };
 
     } // agent

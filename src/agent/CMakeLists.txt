@@ -17,6 +17,12 @@ add_library(
         rules/Condition/PutPanInPlateCondition/PutPanInPlateCondition.cpp rules/Condition/PutPanInPlateCondition/PutPanInPlateCondition.h rules/Action/PutPanInPlateAction/PutPanInPlateAction.cpp rules/Action/PutPanInPlateAction/PutPanInPlateAction.h rules/Rule/PutPanInPlateRule/PutPanInPlateRule.cpp rules/Rule/PutPanInPlateRule/PutPanInPlateRule.h
         rules/Condition/PlateIsReadyCondition/PlateIsReadyCondition.cpp rules/Condition/PlateIsReadyCondition/PlateIsReadyCondition.h rules/Action/PlateIsReadyAction/PlateIsReadyAction.cpp rules/Action/PlateIsReadyAction/PlateIsReadyAction.h rules/Rule/PlateIsReadyRule/PlateIsReadyRule.cpp rules/Rule/PlateIsReadyRule/PlateIsReadyRule.h
 )
+
+target_link_libraries(
+        agent
+        environment
+)
+
 target_include_directories(
         agent PUBLIC
         "${PROJECT_BINARY_DIR}"
