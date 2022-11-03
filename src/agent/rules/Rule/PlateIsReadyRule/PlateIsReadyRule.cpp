@@ -7,8 +7,20 @@ namespace agent {
     namespace rules {
         PlateIsReadyRule::PlateIsReadyRule() : Rule(PlateIsReadyCondition(), PlateIsReadyAction()) {}
 
-        bool PlateIsReadyRule::apply() {
-            return Rule::apply();
+        bool PlateIsReadyRule::apply() 
+        {
+            PlateIsReadyCondition PIRC;
+            PlateIsReadyAction PIRA;
+
+            std::cout << "PlateIsReadyRule visited\n";
+
+            if( PIRC.isVerified() )
+            {
+                PIRA.execute();
+                return true;
+            }
+            
+            return false;
         }
     } // agent
 } // rules

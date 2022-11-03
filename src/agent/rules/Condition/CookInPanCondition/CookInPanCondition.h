@@ -1,13 +1,13 @@
 
-#ifndef POA_OVERCOOKED_BEGINCOOKINGCONDITION_H
-#define POA_OVERCOOKED_BEGINCOOKINGCONDITION_H
+#ifndef POA_OVERCOOKED_COOKINPANONDITION_H
+#define POA_OVERCOOKED_COOKINPANCONDITION_H
 
 #include "rules/Condition/Condition.h"
 
 namespace agent {
     namespace rules {
 
-        class PutSteakOnPanCondition : public Condition {
+        class CookInPanCondition : public Condition {
         public:
             bool isVerified() override;
         };

@@ -1,5 +1,6 @@
 
 #include "Rule.h"
+#include <iostream>
 
 namespace agent {
     namespace rules {
@@ -7,6 +8,7 @@ namespace agent {
 
         bool Rule::apply() 
         {
+            std::cout << "there\n";
             if(condition.isVerified()) 
             {
                 action.execute();

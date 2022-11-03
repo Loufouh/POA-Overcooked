@@ -1,5 +1,6 @@
 #include "agent/rules/Rule/BeginCookingRule/BeginCookingRule.h"
 #include "agent/rules/Rule/CookInFrierRule/CookInFrierRule.h"
+#include "agent/rules/Rule/CookInPanRule/CookInPanRule.h"
 #include "agent/rules/Rule/EmptyBoxRule/EmptyBoxRule.h"
 #include "agent/rules/Rule/HasProblemFrierRule/HasProblemFrierRule.h"
 #include "agent/rules/Rule/HasProblemPanRule/HasProblemPanRule.h"
@@ -17,7 +18,13 @@ namespace agent {
 
         class Set {
             private : 
-                std::vector<Rule> ruleSet;
+                std::vector<Rule*> ruleSet;
+                /*
+                ~Set()
+                {
+                    for( int i = 0; i < ruleSet.size(); i++ )
+                        delete ruleSet[i];
+                }*/
                 
             public : 
                 Set();

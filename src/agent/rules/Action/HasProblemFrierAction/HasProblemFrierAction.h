@@ -8,6 +8,7 @@ namespace agent {
     namespace rules {
 
         class HasProblemFrierAction : public Action {
+            public:
             void execute() override;
         };
 

@@ -1,13 +1,13 @@
 
-#ifndef POA_OVERCOOKED_PUTFRIERINPLATEACTION_H
-#define POA_OVERCOOKED_PUTFRIERINPLATEACTION_H
+#ifndef POA_OVERCOOKED_COOKINPANACTION_H
+#define POA_OVERCOOKED_COOKINPANACTION_H
 
 #include "rules/Action/Action.h"
 
 namespace agent {
     namespace rules {
 
-        class PutFrierInPlateAction : public Action {
+        class CookInPanAction : public Action {
             public:
             void execute() override;
         };

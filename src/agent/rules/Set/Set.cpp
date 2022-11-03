@@ -6,23 +6,54 @@ namespace agent {
     namespace rules {
         Set::Set()
         {
-            ruleSet.push_back( BeginCookingRule() );
-            ruleSet.push_back( CookInFrierRule() );
-            ruleSet.push_back( EmptyBoxRule() );
-            ruleSet.push_back( HasProblemFrierRule() );
-            ruleSet.push_back( HasProblemPanRule() );
-            ruleSet.push_back( PlateIsReadyRule() );
-            ruleSet.push_back( PutFrierInPlateRule() );
-            ruleSet.push_back( PutPanInPlateRule() );
+            ruleSet.push_back( new BeginCookingRule() );
+            ruleSet.push_back( new CookInFrierRule() );
+            ruleSet.push_back( new CookInPanRule() );
+            ruleSet.push_back( new EmptyBoxRule() );
+            ruleSet.push_back( new HasProblemFrierRule() );
+            ruleSet.push_back( new HasProblemPanRule() );
+            ruleSet.push_back( new PlateIsReadyRule() );
+            ruleSet.push_back( new PutFrierInPlateRule() );
+            ruleSet.push_back( new PutPanInPlateRule() );
         }
 
         void Set::applyAll()
         {
+            BeginCookingRule BCR;
+            CookInFrierRule CIFR;
+            CookInPanRule CIPR;
+            EmptyBoxRule EBR;
+            HasProblemFrierRule HPFR;
+            HasProblemPanRule HPPR;
+            PlateIsReadyRule PIRR;
+            PutFrierInPlateRule PFIPR;
+            PutPanInPlateRule PPIPR;
+
+            if( BCR.apply() ) return;
+            if( CIFR.apply() ) return;
+            if( CIPR.apply() ) return;
+            if( EBR.apply() ) return;
+            if( HPFR.apply() ) return;
+            if( HPPR.apply() ) return;
+            if( PIRR.apply() ) return;
+            if( PFIPR.apply() ) return;
+            if( PPIPR.apply() ) return;
+            /*
             std::cout << '\n';
+            int i = 0;
             
-            for( Rule r : ruleSet )
-                if( r.apply() )
+            for( int i = 0; i < ruleSet.size(); i++ )
+            {
+                if( ruleSet[i]->apply() )
                     return;
+            }
+            for( Rule* r : ruleSet )
+            {
+                if( r->apply() )
+                    return;
+                
+                std::cout << i++ << '\n';
+            }*/
             
             std::cout << "I did not do anything !\n";
         }   

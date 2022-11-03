@@ -8,6 +8,7 @@ namespace agent {
     namespace rules {
 
         class BeginCookingAction : public Action {
+            public:
             void execute() override;
         };
 

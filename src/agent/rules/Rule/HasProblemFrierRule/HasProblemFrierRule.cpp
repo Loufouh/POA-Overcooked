@@ -7,8 +7,20 @@ namespace agent {
     namespace rules {
         HasProblemFrierRule::HasProblemFrierRule() : Rule(HasProblemFrierCondition(), HasProblemFrierAction()) {}
 
-        bool HasProblemFrierRule::apply() {
-            return Rule::apply();
+        bool HasProblemFrierRule::apply() 
+        {
+            HasProblemFrierCondition HPFC;
+            HasProblemFrierAction HPFA;
+
+            std::cout << "HasProblemFrierRule visited\n";
+
+            if( HPFC.isVerified() )
+            {
+                HPFA.execute();
+                return true;
+            }
+            
+            return false;
         }
     } // agent
 } // rules

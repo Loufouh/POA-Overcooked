@@ -8,6 +8,7 @@ namespace agent {
     namespace rules {
 
         class EmptyBoxAction : public Action {
+            public:
             void execute() override;
         };
 
