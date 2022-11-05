@@ -7,6 +7,7 @@
 #include "agent/rules/Rule/PlateIsReadyRule/PlateIsReadyRule.h"
 #include "agent/rules/Rule/PutFrierInPlateRule/PutFrierInPlateRule.h"
 #include "agent/rules/Rule/PutPanInPlateRule/PutPanInPlateRule.h"
+#include "agent/rules/Rule/PutPlateOnTableRule/PutPlateOnTableRule.h"
 #include "agent/rules/Rule/Rule.h"
 #include <vector>
 
