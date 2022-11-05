@@ -16,6 +16,7 @@ add_library(
         rules/Condition/PutFrierInPlateCondition/PutFrierInPlateCondition.cpp rules/Condition/PutFrierInPlateCondition/PutFrierInPlateCondition.h rules/Action/PutFrierInPlateAction/PutFrierInPlateAction.cpp rules/Action/PutFrierInPlateAction/PutFrierInPlateAction.h rules/Rule/PutFrierInPlateRule/PutFrierInPlateRule.cpp rules/Rule/PutFrierInPlateRule/PutFrierInPlateRule.h
         rules/Condition/PutPanInPlateCondition/PutPanInPlateCondition.cpp rules/Condition/PutPanInPlateCondition/PutPanInPlateCondition.h rules/Action/PutPanInPlateAction/PutPanInPlateAction.cpp rules/Action/PutPanInPlateAction/PutPanInPlateAction.h rules/Rule/PutPanInPlateRule/PutPanInPlateRule.cpp rules/Rule/PutPanInPlateRule/PutPanInPlateRule.h
         rules/Condition/PlateIsReadyCondition/PlateIsReadyCondition.cpp rules/Condition/PlateIsReadyCondition/PlateIsReadyCondition.h rules/Action/PlateIsReadyAction/PlateIsReadyAction.cpp rules/Action/PlateIsReadyAction/PlateIsReadyAction.h rules/Rule/PlateIsReadyRule/PlateIsReadyRule.cpp rules/Rule/PlateIsReadyRule/PlateIsReadyRule.h
+        rules/Condition/PutPlateOnTableCondition/PutPlateOnTableCondition.cpp rules/Condition/PutPlateOnTableCondition/PutPlateOnTableCondition.h rules/Action/PutPlateOnTableAction/PutPlateOnTableAction.cpp rules/Action/PutPlateOnTableAction/PutPlateOnTableAction.h rules/Rule/PutPlateOnTableRule/PutPlateOnTableRule.cpp rules/Rule/PutPlateOnTableRule/PutPlateOnTableRule.h
 )
 target_link_libraries(
         agent
