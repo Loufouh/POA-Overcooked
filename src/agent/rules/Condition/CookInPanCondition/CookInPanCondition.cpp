@@ -10,7 +10,7 @@ namespace agent {
             environment::Environment &env = *environment::Environment::getInstance_ptr();
             agent::Agent &agent = *agent::Agent::getInstance_ptr();
 
-            std::cout << "CookInPanConditon visited\n";
+            // std::cout << "CookInPanConditon visited\n";
 
             return agent.isCooking()
                 && env.pan.isFree()

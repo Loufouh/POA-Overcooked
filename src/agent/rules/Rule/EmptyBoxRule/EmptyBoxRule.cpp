@@ -12,7 +12,7 @@ namespace agent {
             EmptyBoxCondition EBC;
             EmptyBoxAction EBA;
 
-            std::cout << "EmptyBoxRule visited\n";
+            // std::cout << "EmptyBoxRule visited\n";
 
             if( EBC.isVerified() )
             {

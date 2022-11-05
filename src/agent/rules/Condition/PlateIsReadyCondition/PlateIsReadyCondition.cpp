@@ -8,7 +8,7 @@ namespace agent {
         bool PlateIsReadyCondition::isVerified() {
             environment::Environment &env = *environment::Environment::getInstance_ptr();
 
-            std::cout << "PlateIdReadyCondition visited\n";
+            // std::cout << "PlateIdReadyCondition visited\n";
             return env.plate.isReady();
         }
     } // agent

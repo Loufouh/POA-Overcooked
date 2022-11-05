@@ -13,7 +13,7 @@ namespace agent {
             CookInFrierCondition CIFC;
             CookInFrierAction CIFA;
 
-            std::cout << "CookInFrierRule visited\n";
+            // std::cout << "CookInFrierRule visited\n";
 
             if( CIFC.isVerified() )
             {

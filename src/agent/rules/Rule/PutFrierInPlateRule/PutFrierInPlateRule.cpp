@@ -12,7 +12,7 @@ namespace agent {
             PutFrierInPlateCondition PFIPC;
             PutFrierInPlateAction PFIPA;
 
-            std::cout << "PutFrierInPlateRule visited\n";
+            // std::cout << "PutFrierInPlateRule visited\n";
 
             if( PFIPC.isVerified() )
             {

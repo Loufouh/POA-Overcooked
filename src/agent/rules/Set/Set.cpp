@@ -4,6 +4,7 @@
 
 namespace agent {
     namespace rules {
+        /*
         Set::Set()
         {
             ruleSet.push_back( new BeginCookingRule() );
@@ -16,7 +17,7 @@ namespace agent {
             ruleSet.push_back( new PutFrierInPlateRule() );
             ruleSet.push_back( new PutPanInPlateRule() );
             ruleSet.push_back( new PutPlateOnTableRule() );
-        }
+        }*/
 
         void Set::applyAll()
         {

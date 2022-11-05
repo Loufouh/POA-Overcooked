@@ -10,7 +10,7 @@ namespace agent {
             environment::Environment &env = *environment::Environment::getInstance_ptr();
             agent::Agent &agent = *agent::Agent::getInstance_ptr();
             
-            std::cout << "BeginCookingCondition visited\n";
+            // std::cout << "BeginCookingCondition visited\n";
 
             return env.orderList.hasRemainingOrders()
                     && !(

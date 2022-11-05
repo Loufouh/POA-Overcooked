@@ -13,7 +13,7 @@ namespace agent {
             BeginCookingCondition BCC; 
             BeginCookingAction BCA;
 
-            std::cout << "BeginCookingRule visited\n";
+            // std::cout << "BeginCookingRule visited\n";
 
             if(BCC.isVerified()) 
             {

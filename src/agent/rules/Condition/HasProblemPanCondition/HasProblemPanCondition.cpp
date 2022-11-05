@@ -8,7 +8,7 @@ namespace agent {
         bool HasProblemPanCondition::isVerified() {
             environment::Environment &env = *environment::Environment::getInstance_ptr();
 
-            std::cout << "HasProblemPanCondition visited\n";
+            // std::cout << "HasProblemPanCondition visited\n";
             return env.pan.hasProblem();
         }
     } // agent

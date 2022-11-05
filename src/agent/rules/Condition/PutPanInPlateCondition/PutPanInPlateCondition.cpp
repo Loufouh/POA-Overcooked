@@ -8,7 +8,7 @@ namespace agent {
         bool PutPanInPlateCondition::isVerified() {
             environment::Environment &env = *environment::Environment::getInstance_ptr();
 
-            std::cout << "PutPanInPlateCondition visited\n";
+            // std::cout << "PutPanInPlateCondition visited\n";
 
             return env.pan.isReady()
                     && env.table.hasPlate();

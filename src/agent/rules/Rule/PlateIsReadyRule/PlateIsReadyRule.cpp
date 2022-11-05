@@ -12,7 +12,7 @@ namespace agent {
             PlateIsReadyCondition PIRC;
             PlateIsReadyAction PIRA;
 
-            std::cout << "PlateIsReadyRule visited\n";
+            // std::cout << "PlateIsReadyRule visited\n";
 
             if( PIRC.isVerified() )
             {

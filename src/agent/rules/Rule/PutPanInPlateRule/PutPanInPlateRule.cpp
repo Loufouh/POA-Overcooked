@@ -12,7 +12,7 @@ namespace agent {
             PutPanInPlateCondition PPIPC;
             PutPanInPlateAction PPIPA;
 
-            std::cout << "PutPanInPlateRule visited\n";
+            // std::cout << "PutPanInPlateRule visited\n";
 
             if( PPIPC.isVerified() )
             {

@@ -8,7 +8,7 @@ namespace agent {
         bool PutFrierInPlateCondition::isVerified() {
             environment::Environment &env = *environment::Environment::getInstance_ptr();
             
-            std::cout << "PutFrierInPlateCondition visited\n";
+            // std::cout << "PutFrierInPlateCondition visited\n";
 
             return env.frier.isReady()
                     && env.table.hasPlate();

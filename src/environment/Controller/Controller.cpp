@@ -150,6 +150,7 @@ namespace environment {
     
     void Controller::garnishSteak() 
     {
+        Environment::getInstance_ptr()->pan.setFree();
         if( Environment::getInstance_ptr()->plate.containsFries() ) 
             Environment::getInstance_ptr()->plate.setReady();
         else                            
@@ -158,11 +159,16 @@ namespace environment {
     
     void Controller::garnishFries() 
     {
+        Environment::getInstance_ptr()->frier.setFree();
         if( Environment::getInstance_ptr()->plate.containsSteak() ) 
             Environment::getInstance_ptr()->plate.setReady();
         else                             
             Environment::getInstance_ptr()->plate.setFriesOnly();
     }
     
-    void Controller::ring () {Environment::getInstance_ptr()->table.state = environment::objects::TableState::hasNoPlate;}
+    void Controller::ring () 
+    {
+        Environment::getInstance_ptr()->plate.setEmpty();
+        Environment::getInstance_ptr()->table.state = environment::objects::TableState::hasNoPlate;
+    }
 }

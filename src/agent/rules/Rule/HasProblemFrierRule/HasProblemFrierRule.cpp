@@ -12,7 +12,7 @@ namespace agent {
             HasProblemFrierCondition HPFC;
             HasProblemFrierAction HPFA;
 
-            std::cout << "HasProblemFrierRule visited\n";
+            // std::cout << "HasProblemFrierRule visited\n";
 
             if( HPFC.isVerified() )
             {

@@ -19,7 +19,7 @@ namespace agent {
 
         class Set {
             private : 
-                std::vector<Rule*> ruleSet;
+                // std::vector<Rule*> ruleSet;
                 /*
                 ~Set()
                 {
@@ -28,7 +28,7 @@ namespace agent {
                 }*/
                 
             public : 
-                Set();
+                Set() {}
                 void applyAll();
 
         };

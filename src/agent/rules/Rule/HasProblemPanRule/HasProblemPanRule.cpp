@@ -12,7 +12,7 @@ namespace agent {
             HasProblemPanCondition HPPC;
             HasProblemPanAction HPPA;
 
-            std::cout << "HasProblemPanRule visited\n";
+            // std::cout << "HasProblemPanRule visited\n";
 
             if( HPPC.isVerified() )
             {

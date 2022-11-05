@@ -12,7 +12,7 @@ namespace agent {
             PutPlateOnTableCondition PPOTC;
             PutPlateOnTableAction PPOTA;
 
-            std::cout << "PutPlateOnTableRule visited\n";
+            // std::cout << "PutPlateOnTableRule visited\n";
 
             if( PPOTC.isVerified() )
             {

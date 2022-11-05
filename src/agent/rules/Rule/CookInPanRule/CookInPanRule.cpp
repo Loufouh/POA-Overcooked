@@ -13,7 +13,7 @@ namespace agent {
             CookInPanCondition CIPC; 
             CookInPanAction CIPA;
 
-            std::cout << "CookInPanRule visited\n";
+            // std::cout << "CookInPanRule visited\n";
 
             if(CIPC.isVerified()) 
             {
